@@ -1,14 +1,22 @@
 import { useState } from 'react';
 import './App.css';
-import Header from '@/Components/Header';
+import Home from '@/Components/Home';
+
+import { createBrowserRouter, RouterProvider, Route, Link } from 'react-router-dom';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home />,
+  },
+]);
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="App">
-      <p>Portofolio {count}</p>
-      <Header />
+      <RouterProvider router={router} />
     </div>
   );
 }

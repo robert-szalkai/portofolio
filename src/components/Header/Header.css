@@ -1,0 +1,11 @@
+header {
+    @apply border-b border-b-[0.5px] border-white;
+}
+
+.header-container {
+    @apply container mx-auto flex items-center gap-7 px-4 lg:px-8 py-6
+}
+
+.nav-link {
+    @apply text-sm font-extralight tracking-[2.8px] uppercase
+}

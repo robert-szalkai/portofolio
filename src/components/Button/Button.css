@@ -1,0 +1,31 @@
+.btn {
+  @apply py-4 px-7 rounded-xl text-base relative overflow-hidden;
+}
+
+.btn.btn-primary {
+  @apply bg-orange-400 text-black-400;
+}
+
+.btn.btn-ghost {
+  @apply text-orange-400 border border-orange-400;
+}
+
+.bg-clipped-button {
+  transition: 0.3s;
+  @apply absolute left-0 top-0 right-0 bottom-0 z-0 opacity-0 bg-gray-300
+}
+
+.btn-text {
+    @apply relative z-10;
+  }
+
+.btn.btn-primary:hover .bg-clipped-button {
+  opacity: 1;
+  @apply animate-btn-primary-hover
+}
+
+.btn.btn-ghost:hover {
+    transition: all 0.2s cubic-bezier(0, 0.61, 0.48, 0.99);
+    @apply border-gray-300 text-gray-300
+}
+

@@ -1,15 +1,18 @@
 .title {
-    @apply text-lg lg:text-xl xl:text-xxl font-light text-gray-300 text-center relative font-lust
+    @apply text-lg md:text-xl xl:text-xxl font-light text-gray-300 text-center relative font-lust
+        mb-14 md:mb-0
 }
 
 .orange-circle {
-    left: -106px;
-    top: -30px;
-    @apply absolute
+    @apply absolute -top-7 lg:-top-14 xl:-top-8 -left-14 md:-left-17 xl:-left-24 w-1/12 xl:w-fit
 }
 
 .green-circle {
-    @apply absolute -right-7 -bottom-7 xl:-bottom-8
+    @apply absolute -right-2 md:-right-7 -bottom-7 xl:-bottom-8
+}
+
+.selfie-img {
+    @apply absolute lg:inline left-0 -bottom-14 md:bottom-0
 }
 
 .subtitle {

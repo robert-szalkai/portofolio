@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       colors: {
         green: {
+          300: '#1D3A30',
           400: '#0F1E1B'
         },
         gray: {
@@ -30,6 +31,10 @@ module.exports = {
       fontFamily: {
         basic: ['basic-sans', 'sans-serif'],
         lust: ['lust-sans', 'sans-serif']
+      },
+      spacing: {
+        17: '4.25rem',
+        24: '6rem'
       },
       keyframes: {
         'btn-primary-hover': {

@@ -17,25 +17,29 @@ const Hero = () => {
       <h1 className="title">
         <img
           width={82}
-          className="orange-circle w-1/12 xl:w-fit"
+          className="orange-circle w-[48px] xl:w-fit"
           src={orangeCircleImg}
           alt="orange-circle"
         />
-        Expert Front-end <img className="inline" src={tooltipImg} alt="ball" /> MVP <br />
-        Developer <img className="inline" src={ballImg} alt="ball" /> for <br />
-        <img className="inline" src={selfieImg} alt="selfie" /> Interactive websites
-        <img className="green-circle w-1/12 xl:w-fit" src={greenCircleImg} alt="green-circle" />
+        Expert Front-end <br className="block lg:hidden" />
+        <img className="inline h-8 md:h-auto" src={tooltipImg} alt="green circle" /> MVP <br />
+        Developer <img className="inline h-8 md:h-auto" src={ballImg} alt="ball" />{' '}
+        <br className="block lg:hidden" /> for <br className="hidden lg:block" />
+        <img
+          className="selfie-img"
+          src={selfieImg}
+          alt="selfie"
+        /> Interactive <br className="block lg:hidden" /> websites
+        <img className="green-circle w-[30px] md:w-[48px] xl:w-fit" src={greenCircleImg} alt="green-circle" />
       </h1>
       <p className="subtitle mb-4">
         A perfectionist who never settles for anything less than excellence. I take pride
-        in delivering <br /> robust code that's clean, efficient, and ready to play.
+        in delivering <br className='hidden lg:block' /> robust code that's clean, efficient, and ready to play.
       </p>
 
-      <div className="flex gap-6">
-        <Button variant='btn-primary'>See my work</Button>
-        <Button variant="btn-ghost">
-          Download CV
-        </Button>
+      <div className="flex flex-wrap justify-center gap-6">
+        <Button variant="btn-primary">See my work</Button>
+        <Button variant="btn-ghost">Download CV</Button>
       </div>
     </section>
   );

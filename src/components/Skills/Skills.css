@@ -1,0 +1,4 @@
+.skills-container {
+    grid-template-columns: max-content 1fr;
+    @apply grid gap-x-5 gap-y-2 items-center
+}

@@ -1,4 +1,4 @@
 .home-container {
     min-height: 300vh;
-    @apply bg-green-400;
+    @apply bg-green-400 text-gray-300;
 }

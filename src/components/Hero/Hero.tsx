@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="lg:container flex flex-col items-center gap-10 pt-20 pb-48 px-5"
+      className="lg:container flex flex-col items-center gap-10 pt-20 pb-40 md:pb-48 px-5"
     >
       <h1 className="title">
         <img

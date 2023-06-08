@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       colors: {
         green: {
+          200: '#6BBC93',
           300: '#1D3A30',
           400: '#0F1E1B'
         },
@@ -23,8 +24,12 @@ module.exports = {
       },
       fontSize: {
         sm: ['14px', '17px'],
+        normal: ['16px', '19px'],
         base: ['20px', '24px'],
+        xmd: ['26px', '38px'],
+        md: ['30px', '42px'],
         lg: ['35px', '40px'],
+        big: ['50px', '60px'],
         xl: ['64px', '100px'],
         xxl: ['82px', '115px']
       },
@@ -34,7 +39,8 @@ module.exports = {
       },
       spacing: {
         17: '4.25rem',
-        24: '6rem'
+        24: '6rem',
+        30: '7.5rem',
       },
       keyframes: {
         'btn-primary-hover': {

@@ -1,0 +1,44 @@
+.about-me-container {
+  @apply flex gap-10 justify-between items-start;
+}
+
+.about-me-text {
+  @apply text-md font-light w-[454px] tracking-wide;
+}
+
+.about-me-text.deliver {
+  @apply mt-0 md:mt-[235px];
+}
+
+.about-me-text.coach {
+  @apply self-end;
+}
+
+.low-light-text {
+  @apply text-gray-300 text-opacity-10 transition-colors;
+}
+
+.scrolled.low-light-text {
+  @apply text-opacity-100;
+}
+
+.img-deliver {
+  @apply w-[436px] mr-20;
+}
+
+.about-me-img-line {
+  @apply absolute h-[1px] w-[1000px] bg-white;
+}
+
+.about-me-img-line.deliver {
+  @apply left-full top-[235px];
+}
+
+.about-me-img-line.coach {
+  right: calc(100% + 80px);
+  top: 330px;
+}
+
+.img-coach {
+  @apply w-[506px];
+}

@@ -8,7 +8,7 @@ import htmlIcon from '@/Assets/img/html_icon.png';
 
 const Skills = () => {
   return (
-    <section className="lg:container px-5">
+    <section className="lg:container px-5 mb-[320px]">
       <p className="text-big md:text-xxl font-lust mb-14 md:mb-30">Capabilities</p>
 
       <p className="text-normal uppercase text-green-200 font-light tracking-[2px] mb-6">

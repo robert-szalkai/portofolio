@@ -4,13 +4,14 @@ import './Home.css';
 import Header from '@/Components/Header';
 import Hero from '@/Components/Hero';
 import Skills from '../Skills';
+import AboutMe from '../AboutMe';
 
 const Home = () => {
   return (
     <div className="home-container">
       <Header />
 
-      <main>
+      <main className='overflow-hidden'>
         <Hero />
 
         <p className="text-xmd md:text-md text-center px-5 mb-36 md:mb-44">
@@ -26,6 +27,8 @@ const Home = () => {
         </p>
 
         <Skills />
+
+        <AboutMe />
 
         <p className="text-xl my-40">HERO section</p>
         <p className="text-xl mb-40">work section</p>

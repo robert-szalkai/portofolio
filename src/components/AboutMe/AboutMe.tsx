@@ -7,7 +7,7 @@ import aboutMeImg2 from '@/Assets/img/about_robi-2.png';
 
 const AboutMe = () => {
   return (
-    <section className="max-w-6xl px-5 mx-auto">
+    <section className="max-w-6xl px-5 mx-auto mb-[340px]">
       <div className="about-me-container mb-16 md:mb-64">
         <p className="about-me-text deliver">
           <span className="low-light-text">
@@ -51,7 +51,8 @@ const AboutMe = () => {
             and good practices, we can
           </span>
           <span className="text-gray-300">
-            {' '}take your digital product to the next level.
+            {' '}
+            take your digital product to the next level.
           </span>
         </p>
       </div>

@@ -5,13 +5,15 @@ import Header from '@/Components/Header';
 import Hero from '@/Components/Hero';
 import Skills from '../Skills';
 import AboutMe from '../AboutMe';
+import Reviews from '../Reviews';
+import Timeline from '../Timeline';
 
 const Home = () => {
   return (
     <div className="home-container">
       <Header />
 
-      <main className='overflow-hidden'>
+      <main className="overflow-hidden">
         <Hero />
 
         <p className="text-xmd md:text-md text-center px-5 mb-36 md:mb-44">
@@ -26,12 +28,13 @@ const Home = () => {
           interaction, I can tackle even the toughest digital challenges.
         </p>
 
+        <Timeline />
+
         <Skills />
 
         <AboutMe />
 
-        <p className="text-xl my-40">HERO section</p>
-        <p className="text-xl mb-40">work section</p>
+        <Reviews />
       </main>
     </div>
   );

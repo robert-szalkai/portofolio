@@ -1,0 +1,49 @@
+.project-card-container {
+  @apply flex gap-8 rounded-3xl bg-orange-400 hover:bg-transparent transition-colors cursor-pointer p-20 relative overflow-hidden;
+}
+
+.project-card-circle {
+  width: 142px;
+  height: 142px;
+  @apply bg-white rounded-full grid justify-center items-center transition-colors;
+}
+
+.project-card-circle > * {
+  @apply col-start-1 col-end-1 row-start-1 row-end-1;
+}
+
+.project-card-container:hover > .project-card-circle {
+  @apply bg-orange-400;
+}
+
+.project-card-title {
+  @apply grid content-center gap-3;
+}
+
+.project-card-container:hover > .project-card-title {
+  @apply opacity-0;
+}
+
+.project-card-circle-label {
+  @apply grid content-center gap-2.5 opacity-0 text-center mx-5 my-8;
+}
+
+.project-card-container:hover .project-card-circle-label {
+  @apply opacity-100;
+}
+
+.project-card-logo {
+  @apply justify-self-center;
+}
+
+.project-card-container:hover .project-card-logo {
+  @apply opacity-0;
+}
+
+.project-card-video {
+  @apply absolute left-0 top-0 opacity-0 transition-opacity;
+}
+
+.project-card-container:hover .project-card-video {
+  @apply opacity-100;
+}

@@ -5,7 +5,11 @@ import './ProjectCard.css';
 import logoPago from '@/Assets/img/logo/pago-logo.svg';
 import logoFr from '@/Assets/img/logo/fr-logo.png';
 import logoCoindeck from '@/Assets/img/logo/coindeck-logo.svg';
-import videoFRLogo from '@/Assets/video/coindeck.mp4';
+import logoCdg from '@/Assets/img/logo/cdg-logo-white.svg';
+
+import videoFR from '@/Assets/video/fr-video.mp4';
+import videoCoindeck from '@/Assets/video/coindeck.mp4';
+import videoCdg from '@/Assets/video/cdg-screen-record.webm';
 
 export enum Projects {
   'pago' = 'pago',
@@ -25,6 +29,8 @@ const projectData = {
     logoSrc: logoPago,
     width: 'min-w-[1151px]',
     bgColor: 'bg-orange-400',
+    circleColor: 'bg-orange-400', // group-hover:bg-orange-400
+    video: videoFR,
   },
   [Projects.coindeck]: {
     name: 'Coindeck',
@@ -32,20 +38,26 @@ const projectData = {
     logoSrc: logoCoindeck,
     width: 'min-w-[720px]',
     bgColor: 'bg-green-500',
+    circleColor: 'bg-green-500', // group-hover:bg-green-500
+    video: videoCoindeck,
   },
   [Projects.fr]: {
     name: 'French Revolution',
     description: 'E-commerce',
     logoSrc: logoFr,
     width: 'min-w-[1151px]',
-    bgColor: 'bg-green-100',
+    bgColor: 'bg-orange-400',
+    circleColor: 'bg-orange-400',
+    video: videoFR,
   },
   [Projects.cdg]: {
     name: 'Champ du golf',
     description: 'Golf simulator',
-    logoSrc: logoCoindeck,
+    logoSrc: logoCdg,
     width: 'min-w-[720px]',
     bgColor: 'bg-green-100',
+    circleColor: 'bg-green-100', // group-hover:bg-green-100
+    video: videoCdg,
   },
 };
 
@@ -63,17 +75,24 @@ const ProjectCard = ({ name }: TProjectCardProps) => {
   const handleMouseLeave = () => {
     if (videoRef.current) {
       videoRef.current.pause();
+      videoRef.current.currentTime = 0;
     }
   };
 
   return (
     <div
-      className={`project-card-container ${data.width} ${data.bgColor}`}
+      className={`project-card-container ${data.width} group`}
       onMouseOver={handleHover}
       onMouseLeave={handleMouseLeave}
     >
-      <div className="project-card-circle">
-        <img className="project-card-logo" src={data.logoSrc} alt="project" width={116} />
+      <div className={[data.bgColor, 'project-card-bg'].join(' ')}></div>
+      <div className={`project-card-circle group-hover:${data.circleColor}`}>
+        <img
+          className={['project-card-logo', name === 'cdg' ? 'invert' : ''].join(' ')}
+          src={data.logoSrc}
+          alt="project"
+          width={116}
+        />
         <div className="project-card-circle-label">
           <p className="text-base text-black-400">
             See <br /> case study
@@ -88,7 +107,7 @@ const ProjectCard = ({ name }: TProjectCardProps) => {
         </p>
       </div>
       <video className="project-card-video" ref={videoRef} muted>
-        <source src={videoFRLogo} type="video/mp4" />
+        <source src={data.video} type="video/mp4" />
       </video>
     </div>
   );

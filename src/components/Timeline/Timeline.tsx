@@ -11,9 +11,9 @@ const Timeline = () => {
             <p className="text-big md:text-xxl font-lust">Timeline</p>
             <p className="text-green-200 uppercase">My work</p>
           </div>
-          <ProjectCard name={'pago'} />
+          <ProjectCard name={'fr'} />
           <ProjectCard name={'cdg'} />
-          <InfoCard name="cat" />
+          <InfoCard name="cat" classes="whitespace-nowrap" />
         </div>
         <div className="flex gap-8 ml-72 mr-28">
           <InfoCard name="champion" classes="mr-16" />
@@ -22,7 +22,7 @@ const Timeline = () => {
         </div>
         <div className="flex gap-8 ml-[736px] mr-28">
           <InfoCard name="football" />
-          <ProjectCard name={'fr'} />
+          <ProjectCard name={'pago'} />
         </div>
       </div>
     </section>

@@ -11,10 +11,12 @@ module.exports = {
           100: '#A1F4C8',
           200: '#6BBC93',
           300: '#1D3A30',
-          400: '#0F1E1B'
+          400: '#0F1E1B',
+          500: '#73C5D0'
         },
         gray: {
-          300: '#EFE4E4'
+          300: '#EFE4E4',
+          600: '#1B2C26'
         },
         orange: {
           400: '#FF915D'
@@ -39,6 +41,7 @@ module.exports = {
         lust: ['lust-sans', 'sans-serif']
       },
       spacing: {
+        15: '3.74rem',
         17: '4.25rem',
         24: '6rem',
         30: '7.5rem',
